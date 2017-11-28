@@ -1,0 +1,219 @@
+/* remove search from ask page */
+.qa-template-ask .side-search-bar {
+	display:none;
+}
+.qa-template-ask #title, 
+.qa-template-ask #tags,
+.qa-template-ask #email,
+.qa-template-question input[name=q_title], 
+.qa-template-question #tags
+{
+	max-width:600px;
+}
+
+
+.textrevision ins {
+	background-color: #d1e1ad;
+	color: #405a04;
+	text-decoration: none;
+}
+.textrevision del {
+	background-color: #e5bdb2;
+	color: #a82400;
+	text-decoration: line-through;
+}
+.textrevision .diff-block {
+	margin: 0 0 20px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+.textrevision .diff-date {
+	margin: 0;
+	padding: 5px 10px;
+	line-height: 26px;
+	border-bottom: 1px solid #ccc;
+	border-radius: 5px 5px 0 0;
+	background: #eee;
+	color: #000;
+}
+.textrevision .diff-content {
+	padding: 10px;
+}
+.textrevision .no-diff {
+	color: #999;
+}
+.textrevision .diff-button {
+	float: right;
+	margin-left: 5px;
+}
+.textrevision .diff-button.qa-form-tall-button {
+	font-size: 11px;
+	font-weight: normal;
+	padding: 0 10px 1px;
+}
+
+
+
+.qa-sidepanel .qa-feed {
+	display:none;
+}
+
+.qa-q-view-tag-list {
+	display:none;
+}
+
+/* plugin show-text-changes */
+.textrevision {
+	display:none;
+}
+/* revision comes without p tags but br tags */
+.textrevision br {
+	display: block;
+	margin: 10px 0;
+	line-height: 7px;
+	content: "";
+}
+/* text start */
+.rv_textstart {
+	display:block;
+	margin-top:30px;
+}
+/* comment */
+.qa-a-item-content p strong>em {
+	display:block;
+	margin-top:30px;
+}
+
+.showrevision-button {
+	float:right;
+}
+.revision-h3 {
+	font-size:22px;
+	margin:0px 0 30px 0;
+}
+
+/*fix h1 */
+.navbar .qa-logo {
+	padding-left:14px;
+}
+
+.qa-attribution, .donut-copyright {
+	font-size:12px;
+}
+
+/* Markdown editor styles */
+
+.wmd-button-bar {
+	width: 100%;
+	padding: 5px 0;
+}
+.wmd-input {
+	/* 604 */
+	width: 598px;
+	height: 350px;
+	margin: 0 0 10px;
+	/*padding: 2px;*/
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+.wmd-preview {
+	/* 604 */
+	width: 600px;
+	margin: 10px 0;
+	padding: 15px;
+	border:1px solid #EEE;
+	background:#F9F9F9;
+}
+
+.qa-q-view-content pre,
+.qa-a-item-content pre,
+.wmd-preview pre {
+	overflow: auto;
+	width: 100%;
+	max-height: 400px;
+	padding: 0;
+	border-width: 1px 1px 1px 3px;
+	border-style: solid;
+	border-color: #ddd;
+	background-color: #eee;
+}
+pre code {
+	display: block;
+	padding: 8px;
+}
+
+.wmd-button-row {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 20px;
+}
+
+.wmd-spacer {
+	width: 1px;
+	height: 20px;
+	margin-left: 14px;
+	position: absolute;
+	background-color: Silver;
+	display: inline-block;
+	list-style: none;
+}
+
+.wmd-button {
+	width: 20px;
+	height: 20px;
+	padding-left: 2px;
+	padding-right: 3px;
+	position: absolute;
+	display: inline-block;
+	list-style: none;
+	cursor: pointer;
+}
+
+.wmd-button > span {
+	/* note: background-image is set in plugin script */
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+.wmd-spacer1 {
+	left: 50px;
+}
+.wmd-spacer2 {
+	left: 175px;
+}
+.wmd-spacer3 {
+	left: 300px;
+}
+
+.wmd-prompt-background {
+	background-color: #000;
+}
+.wmd-prompt-dialog {
+	border: 1px solid #999;
+	background-color: #f5f5f5;
+}
+.wmd-prompt-dialog > div {
+	font-size: 0.8em;
+}
+.wmd-prompt-dialog > form > input[type="text"] {
+	border: 1px solid #999;
+	color: black;
+}
+.wmd-prompt-dialog > form > input[type="button"] {
+	border: 1px solid #888;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+	.wmd-input, 
+	.wmd-preview {
+		width: 100%;
+    }
+}
+
